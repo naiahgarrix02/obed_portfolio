@@ -37,7 +37,7 @@ const Carousel: React.FC = () => {
         {infiniteBrands.map((brand, index) => (
           <div
             key={`${brand.src}-${index}`}
-            className="flex-shrink-0"
+            className="shrink-0"
             style={{
               height: "80px",
               width: `${brand.width}px`,
