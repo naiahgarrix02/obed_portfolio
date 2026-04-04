@@ -7,6 +7,7 @@ import About from './components/About'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import TechStack from './components/TechStack'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Projects />
       <TechStack />
+      <Footer />
     </LenisScroll>
   )
 }
