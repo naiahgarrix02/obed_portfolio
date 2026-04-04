@@ -5,6 +5,8 @@ import Carousel from './components/Carousel'
 import LenisScroll from './components/LenisScroll'
 import About from './components/About'
 import Services from './components/Services'
+import Projects from './components/Projects'
+import TechStack from './components/TechStack'
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Carousel />
       <About />
       <Services />
+      <Projects />
+      <TechStack />
     </LenisScroll>
   )
 }
