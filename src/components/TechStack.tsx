@@ -4,7 +4,7 @@ const TechStack = () => {
   return (
     <div className="bg-[url('/bg_img.jpg')] bg-cover bg-center px-15 pt-15 pb-36">
       <div className="flex flex-row justify-between items-start align-center">
-        <h2 className="font-outfit-bold text-[64px] text-[#FDB12F] m-0 w-1/4">
+        <h2 className="font-outfit-bold text-[44px] text-[#FDB12F] m-0 w-1/4">
           MY TECH STACK
         </h2>
         <p className="text-[24px] font-outfit-regular text-white w-1/2">

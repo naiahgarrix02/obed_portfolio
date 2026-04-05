@@ -2,12 +2,12 @@ import { services } from "../constants";
 
 const Services = () => {
   return (
-    <div className="bg-[url('/bg_img.jpg')] bg-cover bg-center min-h-screen flex flex-col justify-between px-15 pt-30 pb-50">
-      <div className="flex flex-row justify-between items-start align-center">
-        <h2 className="font-outfit-bold text-[64px] text-[#FDB12F] m-0 ">
+    <div className="bg-[url('/bg_img.jpg')] bg-cover bg-center flex flex-col justify-between px-15 pt-30 pb-50">
+      <div className="flex flex-row justify-between items-start align-start gap-32">
+        <h2 className="font-outfit-bold text-[44px] text-[#FDB12F] m-0 ">
           WHAT DO I OFFER?
         </h2>
-        <div className="flex flex-row justify-end gap-16 items-center align-center">
+        <div className="flex flex-col justify-end gap-7 items-left align-end">
           <p className="text-[24px] font-outfit-regular text-white w-7/10">
             Explore a curation of services focused on building efficient,
             user-centered digital products. Each is designed to solve real
@@ -15,7 +15,7 @@ const Services = () => {
           </p>
           <a>
             <div className="flex flex-row items items-center text-[20px] gap-2">
-              <p className="text-white font-outfit-regular hover:underline">
+              <p className="text-white font-outfit-regular hover:underline hover:text-[#FDB12F]">
                 My Resume
               </p>
               <img src="/arrow.svg" alt="arrow" className="w-6 h-6" />

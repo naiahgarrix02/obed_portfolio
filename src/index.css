@@ -15,6 +15,9 @@ html {
   -ms-overflow-style: none;
 }
 
+/* ----------------------------- */
+/* OUTFIT FONT UTILITIES */
+/* ----------------------------- */
 .font-outfit-light {
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
@@ -40,55 +43,39 @@ html {
   font-weight: 700;
 }
 
-@font-face {
-  font-family: 'Steelfish';
-  src: url('/assets/fonts/Steelfish\ Rg.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
+/* ----------------------------- */
+/* STEELFISH (CLEAN CDN VERSION) */
+/* ----------------------------- */
 
-@font-face {
-  font-family: 'Steelfish';
-  src: url('/assets/fonts/Steelfish\ Bd.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Steelfish';
-  src: url('/assets/fonts/Steelfish\ Eb.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* Outline is treated as a separate style */
-@font-face {
-  font-family: 'Steelfish Outline';
-  src: url('/assets/fonts/Steelfish\ Outline.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
+/* IMPORTANT:
+   You must include this in index.html:
+   <link href="https://fonts.cdnfonts.com/css/steelfish" rel="stylesheet">
+*/
 
 .font-steelfish-regular {
-  font-family: 'Steelfish', sans-serif;
+  font-family: "Steelfish", sans-serif;
   font-weight: 400;
 }
 
 .font-steelfish-bold {
-  font-family: 'Steelfish', sans-serif;
+  font-family: "Steelfish", sans-serif;
   font-weight: 700;
 }
 
 .font-steelfish-extrabold {
-  font-family: 'Steelfish', sans-serif;
+  font-family: "Steelfish", sans-serif;
   font-weight: 800;
 }
 
+/* Outline variant (only works if CDN provides it) */
 .font-steelfish-outline {
-  font-family: 'Steelfish Outline', sans-serif;
+  font-family: "Steelfish Outline", sans-serif;
   font-weight: 400;
 }
 
+/* ----------------------------- */
+/* LENIS SMOOTH SCROLL */
+/* ----------------------------- */
 html.lenis {
   height: auto;
 }
@@ -107,4 +94,24 @@ html.lenis {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+/* ----------------------------- */
+/* LOADER */
+/* ----------------------------- */
+/* ----------------------------- */
+/* LOADER */
+/* ----------------------------- */
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: transparent;
+  /* Change from black to transparent */
+}
+
+.font-steelfish-regular,
+.font-steelfish-bold,
+.font-steelfish-extrabold {
+  font-display: swap;
 }

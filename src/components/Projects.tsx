@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div className="bg-[url('/bg_projects.jpg')] bg-cover bg-center flex flex-col px-15 py-15">
       <div className="flex flex-row justify-between items-start align-center">
-        <h2 className="font-outfit-bold text-[64px] text-[#FDB12F] m-0 w-full">
+        <h2 className="font-outfit-bold text-[44px] text-[#FDB12F] m-0 w-full">
           SELECTED PROJECTS
         </h2>
         <p className="text-[24px] font-outfit-regular text-white w-8/7">
@@ -15,7 +15,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="mt-36 flex flex-col gap-12">
+      <div className="mt-36 flex flex-col gap-4">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -24,11 +24,11 @@ const Projects = () => {
             {/* Left side */}
             <div className="flex items-center gap-10">
               <div className="py-8 px-12 bg-[#192B39]">
-                <p className="text-white text-[32px] font-outfit-light">
+                <p className="text-white text-[24px] font-outfit-medium">
                   {project.id}
                 </p>
               </div>
-              <h2 className="text-white text-[32px] font-outfit-light group-hover:text-[#192b39]">
+              <h2 className="text-white text-[24px] font-outfit-medium group-hover:text-[#192b39]">
                 {project.title}
               </h2>
             </div>
@@ -40,7 +40,7 @@ const Projects = () => {
 
             {/* URL (right column, LEFT-aligned) */}
             <div className="flex justify-start">
-              <p className="text-white font-outfit-light text-[32px] group-hover:text-[#192b39]">
+              <p className="text-white font-outfit-light text-[24px] group-hover:text-[#192b39]">
                 {project.url}
               </p>
             </div>

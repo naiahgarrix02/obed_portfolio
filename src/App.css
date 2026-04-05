@@ -182,3 +182,16 @@
     border-right-color: var(--border);
   }
 }
+
+.loader-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: transparent;
+  will-change: transform, opacity, filter;
+}
+
+.app-layer {
+  opacity: 0;
+  will-change: opacity;
+}
