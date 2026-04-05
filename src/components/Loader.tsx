@@ -1,6 +1,3 @@
-import { useRef } from "react";
-import gsap from "gsap";
-
 interface LoaderProps {
   progress: number;
 }
