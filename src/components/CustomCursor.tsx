@@ -17,14 +17,14 @@ const CustomCursor = () => {
       gsap.to(cursor, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0,
+        duration: 0.45,
       });
 
       // Follower ring - much smoother, more prominent trail
       gsap.to(follower, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0.45, // Increased from 0.25 to 0.45 for more prominent trail
+        duration: 0.90, // Increased from 0.25 to 0.45 for more prominent trail
         ease: "power2.out",
       });
     };
