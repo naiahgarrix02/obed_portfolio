@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Hero = () => {
+  const [imageLoaded,setImageLoaded] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
   const heroBgRef = useRef<HTMLDivElement>(null);
   const heroContentRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,12 @@ const Hero = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    const img = new Image();
+    img.src = "/bg_img.jpg";
+    img.onload = () => {
+      setImageLoaded(true);
+    }
 
     const ctx = gsap.context(() => {
       // Initial state - hide everything
@@ -237,8 +244,12 @@ const Hero = () => {
       {/* Parallax Background Image */}
       <div
         ref={heroBgRef}
-        className="absolute inset-0 bg-[url('/bg_img.jpg')] bg-cover bg-center"
-        style={{ transform: "scale(1.08)" }}
+        className="absolute inset-0 transition-opacity duration-700 bg-cover bg-center"
+        style={{ transform: "scale(1.08)",
+          backgroundColor: "#152532",
+          backgroundImage: "url('/bg_img.jpg')",
+          opacity: imageLoaded ? 1 : 0,
+         }}
       />
 
       {/* Background overlay */}
